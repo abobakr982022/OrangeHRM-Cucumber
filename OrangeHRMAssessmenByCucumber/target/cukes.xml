@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="399.872">
+<testcase classname="user should be register successfully" name="user register to website" time="62.587">
+<system-out><![CDATA[Given user navigate to registeration page...................................passed
+When user enter data of registeration.......................................passed
+And user click on register button...........................................passed
+And user register successfully..............................................passed
+Then continue registeration.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user login" name="user login with valid data" time="42.075">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name='Email']&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-M0L0ODS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [256a9a14d99790846c94cf17994dd983, findElement {using=name, value=Email}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\aboba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54250}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54250/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 256a9a14d99790846c94cf17994dd983" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user navigate to login page...........................................passed
+When user enter valid data..................................................failed
+Then login done.............................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='Email']"}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-M0L0ODS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [256a9a14d99790846c94cf17994dd983, findElement {using=name, value=Email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\aboba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54250}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54250/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 256a9a14d99790846c94cf17994dd983
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at pages.P02Login.Email(P02Login.java:19)
+	at StepDefination.D02Login.enterValiddata(D02Login.java:22)
+	at ✽.user enter valid data(file:///D:/software%20projects/cucumberEcommerce/src/main/resources/Feature/F02Login.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="Reset password" name="Reset user password" time="20.164">
+<system-out><![CDATA[Given user navigate to login page to recover password.......................passed
+When user press on forget password..........................................passed
+And Enter email to recover password.........................................passed
+And Press on Recover button.................................................passed
+Then confirm that this message is displayed "Email with instructions has been sent to you.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Search about product" name="Search about exist product" time="19.897">
+<system-out><![CDATA[When user enter the product in search bar or substring of product...........passed
+And choose from result of search the product................................passed
+And scroll to see the result................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Choose currency" name="user  Choose currency" time="21.775">
+<system-out><![CDATA[Given choose product from search............................................passed
+And choose from result of search............................................passed
+When user enter required currency...........................................passed
+And scroll down to see the price............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Choose catagory" name="user  Choose catagory" time="20.947">
+<system-out><![CDATA[When user Choose one catagory...............................................passed
+And user choose from catagory subcatagory...................................passed
+And change the grid into list mode..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by color" name="user filter by color" time="23.537">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[href=&quot;/apparel&quot;]&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-M0L0ODS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b2bc10e3e84913b3c18804748a3cd9bc, findElement {using=css selector, value=a[href=&quot;/apparel&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\aboba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54495/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b2bc10e3e84913b3c18804748a3cd9bc" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When user select catagory...................................................failed
+And user choose subcatagory.................................................skipped
+Then Filter by color........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href="/apparel"]"}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-M0L0ODS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b2bc10e3e84913b3c18804748a3cd9bc, findElement {using=css selector, value=a[href="/apparel"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\aboba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54495/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b2bc10e3e84913b3c18804748a3cd9bc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at pages.P07Filtercolor.navtoapperal(P07Filtercolor.java:15)
+	at StepDefination.D07Filtercolor.navtoapperal(D07Filtercolor.java:13)
+	at ✽.user select catagory(file:///D:/software%20projects/cucumberEcommerce/src/main/resources/Feature/F07Filtercolor.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="select tag" name="user select tag" time="31.2">
+<system-out><![CDATA[When user navigate to login page and scroll.................................passed
+Then select tag.............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add to shopcart" name="user add products to shopcart" time="20.316">
+<system-out><![CDATA[When user navigate to page and select tag and scroll........................passed
+Then addtocart..............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add to wishlist" name="user add products to wishlist" time="17.453">
+<system-out><![CDATA[When user navigate to page and select catagory..............................passed
+Then addtowishlist and go to wishlist.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add to comparelist" name="user add products to comparelist" time="53.338">
+<system-out><![CDATA[When user navigate to page and select catagory to put it in comparelist.....passed
+Then addtocomparelist and go to comparelist.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create successful Order" name="user Create successful Order" time="65.756">
+<failure message="element not interactable&#10;  (Session info: chrome=101.0.4951.54)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-M0L0ODS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [03ad3853057dce614bab27eb894a1049, clickElement {id=c739c384-07d8-4c0f-aaa9-e7dfed700edd}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\aboba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61022/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (03ad3853057dce614bab27eb894a1049)] -&gt; css selector: div[id=&quot;shipping-method-buttons-container&quot;] button[type=&quot;button&quot;]]&#10;Session ID: 03ad3853057dce614bab27eb894a1049" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given user login and add product to cart....................................passed
+When insert all data required...............................................failed
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.54)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-M0L0ODS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03ad3853057dce614bab27eb894a1049, clickElement {id=c739c384-07d8-4c0f-aaa9-e7dfed700edd}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\aboba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61022/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (03ad3853057dce614bab27eb894a1049)] -> css selector: div[id="shipping-method-buttons-container"] button[type="button"]]
+Session ID: 03ad3853057dce614bab27eb894a1049
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at StepDefination.D12CreatesuccessfulOrder.paymentprocess(D12CreatesuccessfulOrder.java:40)
+	at ✽.insert all data required(file:///D:/software%20projects/cucumberEcommerce/src/main/resources/Feature/F12CreatesuccessfulOrdert.feature:6)
+]]></failure>
+</testcase>
+</testsuite>

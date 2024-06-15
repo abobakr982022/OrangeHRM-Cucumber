@@ -1,0 +1,3 @@
+file:src/main/resources/Feature/F12CreatesuccessfulOrdert.feature:4
+file:src/main/resources/Feature/F02Login.feature:4
+file:src/main/resources/Feature/F07Filtercolor.feature:4
